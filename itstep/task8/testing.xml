@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="all test SUITE">
+    <test name="Strings_test">
+        <packages>
+            <package name="itstep_test"/>
+        </packages>
+    </test>
+
+    <parameter name="name" value="Maksym" />
+    <parameter name="salary" value="2000.0" />
+    <parameter name="expectedOutput" value="My name is Maksym and my salary is 2000,0" />
+    <test name="String test with param">
+        <classes>
+            <class name="itstep_test.task_8.ParametrizedStrings_test">
+                <methods>
+                    <include name="testFormatString" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
